@@ -53,6 +53,76 @@ Sistema de gerenciamento de academia desenvolvido com Oracle Database, PL/SQL, O
 - Planos API
 - Evolução Física API
 
+## Oracle REST Data Services (ORDS)
+
+### Módulos
+
+#### gym_api
+
+Base Path:
+
+```text
+/api/
+```
+
+Endpoints:
+
+```text
+POST   /api/login
+GET    /api/alunos
+GET    /api/alunos/{id}
+GET    /api/alunos/{id}/resumo
+GET    /api/alunos/{id}/evolucao
+GET    /api/planos
+GET    /api/matriculas
+```
+
+#### dashboard_api
+
+Base Path:
+
+```text
+/api/dashboard/
+```
+
+Endpoints:
+
+```text
+GET /api/dashboard/resumo
+GET /api/dashboard/secure
+```
+
+### Autenticação
+
+O endpoint:
+
+```text
+POST /api/login
+```
+
+retorna um token de autenticação.
+
+Exemplo:
+
+```json
+{
+  "authenticated": true,
+  "token": "2966b11fd650451b858e6deeedd4f337"
+}
+```
+
+O token é armazenado na tabela:
+
+```text
+USUARIOS_TOKEN
+```
+
+e validado pela função:
+
+```text
+FN_VALIDAR_TOKEN
+```
+
 ## Estrutura do Projeto
 
 ```
