@@ -170,6 +170,22 @@ GymManager-Pro
 - TRG_MATRICULA_DATAFIM
 - TRG_MATRICULA_STATUS
 
+## Dashboard
+
+![Dashboard](docs/dashboard.png)
+
+## API Login
+
+![API Login](docs/api-login.png)
+
+## API Dashboard
+
+![API Dashboard](docs/api-dashboard.png)
+
+## Modelo Relacional
+
+![Modelo Relacional](docs/modelo-relacional.png)
+
 ## Autor
 
 Clever Lima Ferreira
